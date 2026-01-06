@@ -3,8 +3,8 @@ import { NextResponse } from 'next/server';
 export async function POST(req: Request) {
   try {
     const { prompt } = await req.json();
-    const API_KEY = "AIzaSyDEnwZzYXY1-mG4-xpwgnXJbxJnyr1Ax4E"; // تأكد من وضع المفتاح الجديد
-
+// استبدل السطر القديم بهذا:
+const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
     // الرابط الأكثر توافقاً مع gemini-1.5-flash
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 

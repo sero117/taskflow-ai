@@ -25,7 +25,6 @@ export function AIChat({ tasks, lang }: { tasks: any[], lang: string }) {
 
     try {
       // 1. استبدل هذا المتغير بمفتاحك الذي ينتهي بـ vC24
-      const API_KEY = "AIzaSyDEnwZzYXY1-mG4-xpwgnXJbxJnyr1Ax4E"; 
       
       // 2. الرابط الصحيح لموديل gemini-1.5-flash (الأسرع والمجاني)
       const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
